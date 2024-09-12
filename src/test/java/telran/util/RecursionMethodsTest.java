@@ -24,4 +24,11 @@ public class RecursionMethodsTest {
         assertEquals(-1000, pow(-10, 3));
         assertThrowsExactly(IllegalArgumentException.class, () -> pow(10, -3));
     }
+    @Test
+    void squareTest() {
+        assertEquals(9, square(3));
+        assertEquals(16, square(4));
+        assertEquals(25, square(5));       
+        assertEquals(100, square(-10));
+    }
 }

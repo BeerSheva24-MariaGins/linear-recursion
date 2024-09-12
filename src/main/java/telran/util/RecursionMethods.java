@@ -38,4 +38,14 @@ public class RecursionMethods {
         return result;
     }
 
+    // #2
+    public static int square(int num) {
+
+        if (num < 0) {
+            num = -num;
+        }
+
+        return num == 0 ? 0 : num + num - 1 + square(num - 1);
+    }
+
 }
