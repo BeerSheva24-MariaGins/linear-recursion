@@ -31,4 +31,17 @@ public class RecursionMethodsTest {
         assertEquals(25, square(5));       
         assertEquals(100, square(-10));
     }
+
+    @Test
+	void isSubstringTest() {
+		String str = "blablablabladablbladdal";
+		assertTrue(isSubstring(str, "blab"));
+		assertTrue(isSubstring(str, "ladd"));
+		assertTrue(isSubstring(str, "ablabla"));
+		assertTrue(isSubstring(str, "dd"));
+		assertFalse(isSubstring(str, "blal"));
+		assertFalse(isSubstring(str, "bladds"));
+		assertFalse(isSubstring(str, "daba"));
+		
+	}
 }
